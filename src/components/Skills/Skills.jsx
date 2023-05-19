@@ -18,7 +18,7 @@ function Skills() {
           <p className="my-5">These are the technologies I've worked with</p>
         </div>
         {/* Grid for icons */}
-        <div className="w-full grid grid-cols-2 sm:grid-cols-4 gap-4  text-center py-8">
+        <div className="w-full grid grid-cols-2 sm:grid-cols-4 gap-4  text-center py-8 justify-center">
           <div className="shadow-md shadow-[#040c16] hover:scale-110 duration-500">
             <img className="w-20 mx-auto" src={HTML} alt="HTML icon" />
             <p>HTML</p>
@@ -46,6 +46,10 @@ function Skills() {
           <div className="shadow-md shadow-[#040c16] hover:scale-110 duration-500">
             <img className="w-20 mx-auto" src={GitHub} alt="HTML icon" />
             <p>GitHub</p>
+          </div>
+          <div className="shadow-md shadow-[#040c16] hover:scale-110 duration-500">
+            <img className="w-20 mx-auto" src={Node} alt="HTML icon" />
+            <p>NODE JS</p>
           </div>
           <div className="shadow-md shadow-[#040c16] hover:scale-110 duration-500">
             <img className="w-20 mx-auto" src={Node} alt="HTML icon" />
