@@ -1,0 +1,2 @@
+@import url(https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap);@tailwind base;@tailwind components;@tailwind utilities;@layer base{body,li{@apply px-4;@apply cursor-pointer}}.content-div{background-position:50%;background-repeat:no-repeat;background-size:cover;height:250px;&:hover{background:linear-gradient(90deg,rgba(112,157,255,.589),rgba(87,82,229,.8))!important}}
+/*# sourceMappingURL=main.45f07b4c.css.map*/
