@@ -5,6 +5,7 @@ import MobileMenu from "../MobileMenu/MobileMenu";
 import Hamburger from "../Hamburger/Hamburger";
 import SocialIcons from "../SocialIcons/SocialIcons";
 import Logo from "../Logo/Logo";
+import NavBar from "../NavBar/NavBar";
 
 function AppBar() {
   const [mobileNav, setMobileNav] = useState(false);
@@ -12,13 +13,13 @@ function AppBar() {
   const handleClick = () => setMobileNav(!mobileNav);
 
   return (
-    <div className="fixed flex h-[80px] w-full items-center justify-between bg-[#0a192f] px-4 text-gray-300">
+    <NavBar>
       <Logo />
       <Menu />
       <Hamburger handleClick={handleClick} mobileNav={mobileNav} />
       <MobileMenu mobileNav={mobileNav} />
       <SocialIcons />
-    </div>
+    </NavBar>
   );
 }
 
