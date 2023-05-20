@@ -1,7 +1,7 @@
 import React from "react";
 import Container from "../Container/Container";
 
-const NavBar = ({ children }) => {
+const AppBarContainer = ({ children }) => {
   return (
     <div className="fixed w-full shadow-xl">
       <Container>
@@ -11,4 +11,4 @@ const NavBar = ({ children }) => {
   );
 };
 
-export default NavBar;
+export default AppBarContainer;

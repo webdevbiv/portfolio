@@ -1,11 +1,11 @@
 import React from "react";
 import Container from "../Container/Container";
 
-const Section = ({ children }) => {
+const Section = ({ children, name }) => {
   return (
-    <div className="w-full h-screen">
+    <div name={name} className="w-full h-screen">
       <Container>
-        <div className="w-full flex flex-col justify-center">{children}</div>
+        <div className="w-full h-screen flex flex-col justify-center">{children}</div>
       </Container>
     </div>
   );
