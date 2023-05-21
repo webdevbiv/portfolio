@@ -3,9 +3,9 @@ import Container from "../Container/Container";
 
 const Section = ({ children, name }) => {
   return (
-    <div name={name} className="w-full h-screen">
+    <div name={name} className="w-full min-h-screen">
       <Container>
-        <div className="w-full h-screen flex flex-col justify-center">{children}</div>
+        <div className="min-h-screen flex flex-col justify-center">{children}</div>
       </Container>
     </div>
   );

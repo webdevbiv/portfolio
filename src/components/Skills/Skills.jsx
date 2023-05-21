@@ -7,6 +7,7 @@ import Node from "../../assets/images/skills/node.png";
 import GitHub from "../../assets/images/skills/github.png";
 import SASS from "../../assets/images/skills/sass.png";
 import TAILWIND from "../../assets/images/skills/tailwind.png";
+import Section from "../Section/Section";
 
 function Skills() {
   const skills = [
@@ -22,14 +23,14 @@ function Skills() {
 
   console.log(skills);
   return (
-    <div name="skills" className="w-full h-screen bg-[#0a192f] text-gray-300">
+    <Section name="skills">
       {/* Container */}
-      <div className="max-w-[1000px] mx-auto p-4 flex flex-col justify-center w-full h-full">
+      <div className="flex flex-col justify-center w-full min-h-screen">
         <div>
           <p className="text-4xl font-bold inline border-b-4 border-sky-500 ">Skills</p>
           <p className="my-5">These are the technologies I've worked with</p>
         </div>
-        <div className="w-full grid grid-cols-2 sm:grid-cols-4 gap-4  text-center py-8 justify-center">
+        <div className="w-full h-auto grid grid-cols-2 sm:grid-cols-4 gap-4  text-center py-8 justify-center">
           {/* Grid for icons */}
           {skills.map((skill, index) => (
             <div key={index} className="shadow-md shadow-[#040c16] hover:scale-110 duration-500">
@@ -39,7 +40,7 @@ function Skills() {
           ))}
         </div>
       </div>
-    </div>
+    </Section>
   );
 }
 
