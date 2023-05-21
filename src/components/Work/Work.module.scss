@@ -1,0 +1,21 @@
+@mixin grid-list($margin) {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: calc(#{$margin} * -1);
+  margin-left: calc(#{$margin} * -1);
+}
+
+@mixin grid-item($columns, $margin) {
+  flex-basis: calc((100% / #{$columns}) - #{$margin});
+  margin-left: $margin;
+  margin-top: $margin;
+}
+
+.workListSm {
+  @include grid-list(16px);
+}
+
+.workGridSm {
+  @include grid-item(4, 16px);
+}
