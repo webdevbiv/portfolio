@@ -23,3 +23,27 @@
 .content-div:hover {
   background: linear-gradient(to right, rgba(112, 157, 255, 0.589), hsla(242, 74%, 61%, 0.8)) !important;
 }
+
+@layer components {
+  .skillsList {
+    margin-top: calc(16px * -1);
+    margin-left: calc(16px * -1);
+  }
+
+  .skillsListItem {
+    flex-basis: calc((100% / 2) - 16px);
+    margin-left: 16px;
+    margin-top: 16px;
+  }
+
+  .skillsListSm {
+    margin-top: calc(16px * -1);
+    margin-left: calc(16px * -1);
+  }
+
+  .skillsListItemSm {
+    flex-basis: calc((100% / 4) - 16px);
+    margin-left: 16px;
+    margin-top: 16px;
+  }
+}

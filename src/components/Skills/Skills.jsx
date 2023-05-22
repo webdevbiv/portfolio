@@ -8,7 +8,6 @@ import GitHub from "../../assets/images/skills/github.png";
 import SASS from "../../assets/images/skills/sass.png";
 import TAILWIND from "../../assets/images/skills/tailwind.png";
 import Section from "../Section/Section";
-import s from "./Skills.module.scss";
 
 function Skills() {
   const skills = [
@@ -23,7 +22,6 @@ function Skills() {
     { name: "TAILWIND", src: TAILWIND },
   ];
 
-  console.log(skills);
   return (
     <Section name="skills">
       {/* Container */}
@@ -32,10 +30,11 @@ function Skills() {
           <p className="text-4xl font-bold inline border-b-4 border-sky-500 ">Skills</p>
           <p className="my-5">These are the technologies I've worked with</p>
         </div>
-        <div className={`w-full h-auto grid grid-cols-2 sm:@apply ${s.skillsListSm}   text-center py-8 justify-center`}>
+        {/* Grid container */}
+        <div className={`flex flex-wrap justify-center  skillsList sm:skillsListSm  w-full h-auto   text-center py-8 `}>
           {/* Grid for icons */}
           {skills.map((skill, index) => (
-            <div key={index} className={`sm:@apply ${s.skillsGridSm} shadow-md shadow-[#040c16] hover:scale-110 duration-500`}>
+            <div key={index} className={`skillsListItem sm:skillsListItemSm shadow-md shadow-[#040c16] hover:scale-110 duration-500`}>
               <img className="w-20 mx-auto" src={skill.src} alt="HTML icon" />
               <p>{skill.name}</p>
             </div>
