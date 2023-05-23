@@ -46,4 +46,32 @@
     margin-left: 16px;
     margin-top: 16px;
   }
+
+  .workList {
+    margin-top: calc(16px * -1);
+    margin-left: calc(16px * -1);
+  }
+
+  .workListItem {
+    flex-basis: calc((100% / 1) - 16px);
+    margin-left: 16px;
+    margin-top: 16px;
+  }
+
+  .workListSm {
+    margin-top: calc(16px * -1);
+    margin-left: calc(16px * -1);
+  }
+
+  .workListItemSm {
+    flex-basis: calc((100% / 2) - 16px);
+    margin-left: 16px;
+    margin-top: 16px;
+  }
+
+  .workListItemMd {
+    flex-basis: calc((100% / 3) - 16px);
+    margin-left: 16px;
+    margin-top: 16px;
+  }
 }
