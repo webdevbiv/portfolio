@@ -58,4 +58,18 @@
     margin-left: 16px;
     margin-top: 16px;
   }
+
+  .underline-after::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    width: 100%;
+    height: 3px;
+    background-color: transparent;
+    transition: background-color 500s ease;
+  }
+  .underline-after:hover::after {
+    @apply bg-sky-500;
+  }
 }

@@ -3,7 +3,7 @@ import Container from "../Container/Container";
 
 const Section = ({ children, name }) => {
   return (
-    <div name={name} className="w-full min-h-screen">
+    <div id={name} className="w-full min-h-screen">
       <Container>
         <div className="min-h-screen flex flex-col justify-center">{children}</div>
       </Container>
