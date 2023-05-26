@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 
-import Menu from "../Menu/Menu";
+import Menu from "../NavMenu/NavMenu";
 import MobileMenu from "../MobileMenu/MobileMenu";
 import Hamburger from "../Hamburger/Hamburger";
 import SocialIcons from "../SocialIcons/SocialIcons";
