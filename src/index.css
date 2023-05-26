@@ -8,8 +8,7 @@
     @apply font-[Raleway];
   }
   li {
-    @apply px-4;
-    @apply cursor-pointer;
+    @apply mx-4;
   }
 }
 
