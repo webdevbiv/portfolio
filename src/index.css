@@ -25,47 +25,36 @@
 }
 
 @layer components {
-  .skillsList {
+  .listFlex {
     margin-top: calc(16px * -1);
     margin-left: calc(16px * -1);
   }
 
-  .skillsListItem {
-    flex-basis: calc((100% / 2) - 16px);
-    margin-left: 16px;
-    margin-top: 16px;
-  }
-
-  .skillsListSm {
-    margin-top: calc(16px * -1);
-    margin-left: calc(16px * -1);
-  }
-
-  .skillsListItemSm {
-    flex-basis: calc((100% / 4) - 16px);
-    margin-left: 16px;
-    margin-top: 16px;
-  }
-
-  .workList {
-    margin-top: calc(16px * -1);
-    margin-left: calc(16px * -1);
-  }
-
-  .workListItem {
+  /* work */
+  .listFlexItems-1 {
     flex-basis: calc((100% / 1) - 16px);
     margin-left: 16px;
     margin-top: 16px;
   }
 
-  .workListItemSm {
+  /* skills */
+  /* work sm */
+  .listFlexItems-2 {
     flex-basis: calc((100% / 2) - 16px);
     margin-left: 16px;
     margin-top: 16px;
   }
 
-  .workListItemMd {
+  /* work md */
+  .listFlexItems-3 {
     flex-basis: calc((100% / 3) - 16px);
+    margin-left: 16px;
+    margin-top: 16px;
+  }
+
+  /* skills sm */
+  .listFlexItems-4 {
+    flex-basis: calc((100% / 4) - 16px);
     margin-left: 16px;
     margin-top: 16px;
   }

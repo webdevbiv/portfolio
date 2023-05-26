@@ -31,10 +31,10 @@ function Skills() {
           <p className="my-5">These are the technologies I've worked with</p>
         </div>
         {/* Grid container */}
-        <div className={`flex flex-wrap justify-center  skillsList sm:skillsListSm  w-full h-auto   text-center py-8 `}>
+        <div className={`flex flex-wrap justify-center listFlex w-full h-auto   text-center py-8 `}>
           {/* Grid for icons */}
           {skills.map((skill, index) => (
-            <div key={index} className={`skillsListItem sm:skillsListItemSm shadow-md shadow-[#040c16] hover:scale-110 duration-500`}>
+            <div key={index} className={`listFlexItems-2 sm:listFlexItems-4 shadow-md shadow-[#040c16] hover:scale-110 duration-500`}>
               <img className="w-20 mx-auto" src={skill.src} alt="HTML icon" />
               <p>{skill.name}</p>
             </div>

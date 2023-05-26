@@ -13,10 +13,10 @@ function Work() {
           <p className="my-5">Check out some of my recent work</p>
         </div>
 
-        <div className="flex flex-wrap justify-center workList w-full h-auto ">
+        <div className="flex flex-wrap justify-center listFlex w-full h-auto ">
           {/* <div className="flex flex-wrap justify-center"> */}
           {WorkData.map((work, index) => (
-            <div key={index} style={{ backgroundImage: `url(${work.img})` }} className=" workListItem sm:workListItemSm md:workListItemMd w-full shadow-lg shadow-[#040c16] group container rounded-md flex justify-center items-center content-div ">
+            <div key={index} style={{ backgroundImage: `url(${work.img})` }} className=" listFlexItems-1 sm:listFlexItems-2 md:listFlexItems-3 w-full shadow-lg shadow-[#040c16] group container rounded-md flex justify-center items-center content-div ">
               {/* Hover Effects */}
               <div className="opacity-0 group-hover:opacity-100 duration-500">
                 <span className="text-2xl font-bold text-white tracking-wider">React JS Application</span>
