@@ -58,6 +58,7 @@
     margin-top: 16px;
   }
 
+  /* NavMenu underline */
   .underline-after::after {
     content: "";
     position: absolute;
