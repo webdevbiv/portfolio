@@ -9,7 +9,7 @@ const LinkWithScroll = ({ to, children, pixelsFromSection }) => {
       smooth={true}
       offset={pixelsFromSection} // Adjust the offset value based on your layout
       duration={500}
-      className="relative hover:underline-after hover:cursor-pointer"
+      className="relative hover:underline-after hover:cursor-pointer px-2"
     >
       {children}
     </ScrollLink>
